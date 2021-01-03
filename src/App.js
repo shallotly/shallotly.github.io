@@ -1,9 +1,18 @@
 import { Component } from 'react';
 import styled from 'styled-components';
+
+const Container = styled.p`
+p {
+  font-family: Helvetica;
+  max-width: 600px;
+  color: #121212;
+  font-size: 18px;
+}
+`
 class App extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <p>Hi my name is xia luo te.</p>
         <p>
           Hi am Charlotte, a third-year computer science-math major at Columbia
@@ -15,7 +24,7 @@ class App extends Component {
           I can do data processing, mapping, natural language processing,
           design, video editing, data visualization.
         </p>
-      </div>
+      </Container>
     );
   }
 }
