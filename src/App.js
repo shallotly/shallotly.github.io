@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import { Project } from './Project';
@@ -54,7 +54,21 @@ const footerLinks = {
   Email: 'mailto:li.zihao@columbia.edu',
 };
 
+const NAME_ROTATE_TIME = 1000;
+
 class App extends Component {
+  state = {
+    index: 0,
+  }
+
+  componentDidMount() {
+    this.intervalID = setInterval(() => console.log('hi'), NAME_ROTATE_TIME);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalID)
+  }
+
   render() {
     return (
       <Container>
