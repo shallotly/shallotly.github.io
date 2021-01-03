@@ -1,4 +1,4 @@
-import { Component, useState, useEffect } from 'react';
+import { Component } from 'react';
 import styled from 'styled-components';
 
 import { Project } from './Project';
@@ -83,10 +83,8 @@ class App extends Component {
           I can do data processing, mapping, natural language processing,
           design, video editing, data visualization.
         </p>
-<<<<<<< HEAD
-        <Project />
-=======
         <h1>Projects</h1>
+        <Project />
         <h1>Coursework</h1>
         <Footer>
           {Object.keys(footerLinks).map(key => (
@@ -97,7 +95,6 @@ class App extends Component {
             </p>
           ))}
         </Footer>
->>>>>>> 46a87aab61726e1f663692f7be3571d25a2a2b74
       </Container>
     );
   }
