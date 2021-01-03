@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import styled from 'styled-components';
 
+import { Project } from './Project';
+
 const Container = styled.p`
 p {
   font-family: Helvetica;
@@ -24,6 +26,7 @@ class App extends Component {
           I can do data processing, mapping, natural language processing,
           design, video editing, data visualization.
         </p>
+        <Project />
       </Container>
     );
   }
