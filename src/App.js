@@ -59,7 +59,7 @@ const Footer = styled.div`
 const footerLinks = {
   GitHub: 'https://github.com/shallotly',
   Twitter: 'https://twitter.com/shallotly',
-  Resume: '#',
+  Resume: '/resume.pdf',
   Email: 'mailto:li.zihao@columbia.edu',
 };
 
@@ -101,7 +101,7 @@ class App extends Component {
         <p>
           Hi am Charlotte, a third-year computer science-math major at Columbia
           University I also fuck up the art world: you can view my art{' '}
-          <a href="#">here</a>. My resume is <a href={`/resume.pdf`}>here</a>. You can hmu
+          <a href="https://charligraphy.wordpress.com/">here</a>. My resume is <a href="/resume.pdf">here</a>. You can hmu
           at <a href="mailto:li.zihao@columbia.edu">li.zihao@columbia.edu</a>.
         </p>
         <p>
