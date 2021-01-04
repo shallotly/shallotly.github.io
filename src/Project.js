@@ -1,16 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const WIDTH = '800px';
+
 const Div = styled.div`
   margin-bottom: 20px;
 
   & > a {
     display: block;
+    margin: 0 auto;
     text-align: center;
+    max-width: ${WIDTH};
   }
 
   div {
     margin: 7px auto;
+  }
+
+  div a {
+    text-decoration: none;
+    color: #121212;
   }
 
   div a:first-child {
@@ -24,7 +33,7 @@ const Div = styled.div`
 
   div,
   p {
-    max-width: 800px;
+    max-width: ${WIDTH};
   }
 
   p {

@@ -8,15 +8,16 @@ const Container = styled.div`
   margin-top: 40px;
   font-family: Helvetica;
   color: #121212;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 24px;
 
   > p {
-    max-width: 600px;
+    max-width: 540px;
     margin: 15px auto;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 19px;
     border-bottom: 1px solid #ddd;
     padding: 0 5px 6px;
     display: inline-block;
