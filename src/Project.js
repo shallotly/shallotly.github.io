@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WIDTH = '760px';
-const HEIGHT = '460px';
+const WIDTH = '460px';
+const HEIGHT = '320px';
 
 const Div = styled.div`
   margin-bottom: 20px;
@@ -44,7 +44,7 @@ const Div = styled.div`
 
   div,
   p {
-    width: ${WIDTH};
+    width: 760px;
     max-width: calc(100% - 30px);
   }
 
