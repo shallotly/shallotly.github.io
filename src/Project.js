@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WIDTH = '760px';
-const HEIGHT = '460px';
+const WIDTH = '420px';
+const HEIGHT = '260px';
 
 const Div = styled.div`
-  margin-bottom: 20px;
+  margin: 0 auto 30px;
+  width: 760px;
+  max-width: calc(100% - 30px);
 
   & > a {
     display: block;
-    margin: 0 auto;
     margin-bottom: 8px;
     text-align: center;
     width: ${WIDTH};
@@ -18,6 +19,7 @@ const Div = styled.div`
 
     img {
       object-fit: cover;
+      /* object-position: left 50%; */
       width: 100%;
       height: 100%;
     }
@@ -44,8 +46,6 @@ const Div = styled.div`
 
   div,
   p {
-    width: ${WIDTH};
-    max-width: calc(100% - 30px);
   }
 
   p {
