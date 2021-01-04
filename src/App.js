@@ -5,7 +5,6 @@ import { Project } from './Project';
 import data from './data';
 
 const Container = styled.div`
-  margin-top: 40px;
   font-family: Helvetica;
   color: #121212;
   font-size: 19px;
@@ -21,7 +20,7 @@ const Container = styled.div`
     border-bottom: 1px solid #ddd;
     padding: 0 5px 6px;
     display: inline-block;
-    margin: 20px 0;
+    margin: 13px 0;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -29,7 +28,7 @@ const Container = styled.div`
 
 const Footer = styled.div`
   margin: 0 auto;
-  margin-top: 12px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 
@@ -42,10 +41,12 @@ const Footer = styled.div`
     color: black;
   }
 
-  p:not(:last-child) {
-    border-right: 2px solid #121212;
-    padding-right: 7px;
-    margin-right: 7px;
+  span:last-child {
+    display: none;
+  }
+
+  span {
+    margin: 0 5px;
   }
 `;
 
@@ -109,11 +110,14 @@ class App extends Component {
         </div>
         <Footer>
           {Object.keys(footerLinks).map(key => (
+            <>
             <p key={key}>
               <a key={key} href={footerLinks[key]}>
                 {key}
               </a>
             </p>
+            <span>|</span>
+            </>
           ))}
         </Footer>
       </Container>
