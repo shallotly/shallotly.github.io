@@ -5,24 +5,30 @@ import { Project } from './Project';
 import data from './data';
 
 const Container = styled.div`
-  font-family: Helvetica;
+  font-family: Inconsolata;
   color: #121212;
   font-size: 19px;
-  line-height: 24px;
+  line-height: 22px;
 
   > p {
-    max-width: 540px;
+    max-width: 760px;
     margin: 15px auto;
   }
 
   h1 {
     font-size: 19px;
-    border-bottom: 1px solid #ddd;
     padding: 0 5px 6px;
-    display: inline-block;
-    margin: 13px 0;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin: 80px auto 13px;
+    font-weight: 400;
+    max-width: 760px;
+  }
+
+  hr {
+    width: 85px;
+    border: none;
+    border-top: 1px solid #a7a7a7;
+    margin: 0;
+    margin-top: 5px;
   }
 `;
 
@@ -58,34 +64,40 @@ const footerLinks = {
 };
 
 const NAME_ROTATE_TIME = 5000;
-const ALIAS = ['厉子浩', 'Zihao Li','厲子浩','Charlotte Li','shallotly','char *']
+const ALIAS = [
+  '厉子浩',
+  'Zihao Li',
+  '厲子浩',
+  'Charlotte Li',
+  'shallotly',
+  'char *',
+];
 
 class App extends Component {
   state = {
     index: 0,
-  }
+  };
 
   componentDidMount() {
-    this.intervalID = setInterval(
-      () => this.changeName(), 
-      NAME_ROTATE_TIME
-      );
+    this.intervalID = setInterval(() => this.changeName(), NAME_ROTATE_TIME);
   }
 
   componentWillUnmount() {
-    clearInterval(this.intervalID)
+    clearInterval(this.intervalID);
   }
 
   changeName() {
     this.setState({
-      index: this.state.index + 1
-    })
+      index: this.state.index + 1,
+    });
   }
 
   render() {
     return (
       <Container>
-        <p>Hi my name is {ALIAS[(this.state.index % ALIAS.length)]}.</p>
+        <p>
+          Hi my name is <b>{ALIAS[this.state.index % ALIAS.length]}</b>.
+        </p>
         <p>
           Hi am Charlotte, a third-year computer science-math major at Columbia
           University I also fuck up the art world: you can view my art{' '}
@@ -96,27 +108,33 @@ class App extends Component {
           I can do data processing, mapping, natural language processing,
           design, video editing, data visualization.
         </p>
-        <h1>Projects</h1>
+        <h1>
+          Projects
+          <hr />
+        </h1>
         <div>
           {data.projects.map(i => (
-            <Project data={i}/>
+            <Project data={i} />
           ))}
         </div>
-        <h1>Coursework</h1>
+        <h1>
+          Coursework
+          <hr />
+        </h1>
         <div>
           {data.courses.map(i => (
-            <Project data={i}/>
+            <Project data={i} />
           ))}
         </div>
         <Footer>
           {Object.keys(footerLinks).map(key => (
             <>
-            <p key={key}>
-              <a key={key} href={footerLinks[key]}>
-                {key}
-              </a>
-            </p>
-            <span>|</span>
+              <p key={key}>
+                <a key={key} href={footerLinks[key]}>
+                  {key}
+                </a>
+              </p>
+              <span>|</span>
             </>
           ))}
         </Footer>

@@ -27,7 +27,7 @@ export default {
     ],
     courses: [
         {
-            title: 'Simple Web Server in C',
+            title: 'Web Server in C',
             publisher: 'Advanced Programming',
             articleUrl: 'https://www.nbcnews.com/news/us-news/map-trump-international-student-rule-effects-state-n1233219',
             publisherUrl: 'https://www.nbcnews.com/pages/author/charlotte-li',
