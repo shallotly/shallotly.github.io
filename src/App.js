@@ -56,7 +56,8 @@ const footerLinks = {
   Email: 'mailto:li.zihao@columbia.edu',
 };
 
-const NAME_ROTATE_TIME = 1000;
+const NAME_ROTATE_TIME = 5000;
+const ALIAS = ['厉子浩', 'Zihao Li','厲子浩','Charlotte Li','shallotly','char *']
 
 class App extends Component {
   state = {
@@ -64,17 +65,26 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.intervalID = setInterval(() => console.log('hi'), NAME_ROTATE_TIME);
+    this.intervalID = setInterval(
+      () => this.changeName(), 
+      NAME_ROTATE_TIME
+      );
   }
 
   componentWillUnmount() {
     clearInterval(this.intervalID)
   }
 
+  changeName() {
+    this.setState({
+      index: this.state.index + 1
+    })
+  }
+
   render() {
     return (
       <Container>
-        <p>Hi my name is xia luo te.</p>
+        <p>Hi my name is {ALIAS[(this.state.index % ALIAS.length)]}.</p>
         <p>
           Hi am Charlotte, a third-year computer science-math major at Columbia
           University I also fuck up the art world: you can view my art{' '}
