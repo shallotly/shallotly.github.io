@@ -34,7 +34,7 @@ const Container = styled.div`
 
 const Footer = styled.div`
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
 
@@ -63,7 +63,7 @@ const footerLinks = {
   Email: 'mailto:li.zihao@columbia.edu',
 };
 
-const NAME_ROTATE_TIME = 5000;
+const NAME_ROTATE_TIME = 3000;
 const ALIAS = [
   '厉子浩',
   'Zihao Li',
@@ -96,17 +96,18 @@ class App extends Component {
     return (
       <Container>
         <p>
-          Hi my name is <b>{ALIAS[this.state.index % ALIAS.length]}</b>.
+          Hi, my name is <b>{ALIAS[this.state.index % ALIAS.length]}</b>.
         </p>
         <p>
-          Hi am Charlotte, a third-year computer science-math major at Columbia
-          University I also fuck up the art world: you can view my art{' '}
-          <a href="https://charligraphy.wordpress.com/">here</a>. My resume is <a href="/resume.pdf">here</a>. You can hmu
-          at <a href="mailto:li.zihao@columbia.edu">li.zihao@columbia.edu</a>.
+          I am a third-year computer science-math major at Columbia University
+          interested in data visualization and data journalism.
         </p>
         <p>
-          I can do data processing, mapping, natural language processing,
-          design, video editing, data visualization.
+          I also have experience in data processing, mapping, design, natural
+          language processing, design, and video editing. You can view my art{' '}
+          <a href="https://charligraphy.wordpress.com">here</a>. My resume is{' '}
+          <a href={`/resume.pdf`}>here</a>. You can hmu at{' '}
+          <a href="mailto:li.zihao@columbia.edu">li.zihao@columbia.edu</a>.
         </p>
         <h1>
           Projects
