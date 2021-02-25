@@ -11,7 +11,7 @@ const Container = styled.div`
   line-height: 22px;
 
   > p {
-    max-width: 760px;
+    max-width: 720px;
     margin: 15px auto;
   }
 
@@ -20,7 +20,7 @@ const Container = styled.div`
     padding: 0 5px 6px;
     margin: 80px auto 13px;
     font-weight: 400;
-    max-width: 760px;
+    max-width: 720px;
   }
 
   hr {
@@ -103,10 +103,10 @@ class App extends Component {
           interested in data visualization and data journalism.
         </p>
         <p>
-          I also have experience in data processing, mapping, design, natural
+          I also have experience in data analysis, mapping, design, natural
           language processing, design, and video editing. You can view my art{' '}
           <a href="https://charligraphy.wordpress.com">here</a>. My resume is{' '}
-          <a href={`/resume.pdf`}>here</a>. You can hmu at{' '}
+          <a href={`/resume.pdf`}>here</a>. You can contact me at{' '}
           <a href="mailto:li.zihao@columbia.edu">li.zihao@columbia.edu</a>.
         </p>
         <h1>

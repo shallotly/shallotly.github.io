@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WIDTH = '420px';
-const HEIGHT = '260px';
+const WIDTH = '440px';
+const HEIGHT = '320px';
 
 const Div = styled.div`
   margin: 0 auto 30px;
-  width: 760px;
+  width: 720px;
   max-width: calc(100% - 30px);
 
   & > a {
@@ -53,19 +53,31 @@ const Div = styled.div`
   }
 `;
 
-export const Project = ({data}) => {
+/* This function returns the publisher & URL for the URL of a certain article */
+const getPublisher = url => {
+  if (url.includes('nbcnews.com'))
+    return ['NBC News', 'https://www.nbcnews.com/pages/author/charlotte-li'];
+  else if (url.includes('columbiaspectator.com'))
+    return [
+      'Columbia Daily Spectator',
+      'https://www.columbiaspectator.com/contributors/Charlotte-Li/',
+    ];
+};
+
+export const Project = ({ data: { articleUrl, imgPath, title, description } }) => {
+  const [publisher, publisherUrl] = getPublisher(articleUrl);
   return (
     <Div>
-      {data.imgPath && (
-        <a href={data.articleUrl}>
-          <img src={`/images/${data.imgPath}`} />
+      {imgPath && (
+        <a href={articleUrl}>
+          <img src={imgPath.includes('http') ? imgPath : `/images/${imgPath}`} />
         </a>
       )}
       <div>
-        <a href={data.articleUrl}>{data.title}</a>|
-        <a href={data.publisherUrl}>{data.publisher}</a>
+        <a href={articleUrl}>{title}</a>|
+        <a href={publisherUrl}>{publisher}</a>
       </div>
-      <p>{data.description}</p>
+      <p>{description}</p>
     </Div>
   );
 };
