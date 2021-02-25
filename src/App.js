@@ -11,7 +11,7 @@ const Container = styled.div`
   line-height: 22px;
 
   > p {
-    max-width: 720px;
+    max-width: 700px;
     margin: 15px auto;
   }
 
@@ -20,7 +20,7 @@ const Container = styled.div`
     padding: 0 5px 6px;
     margin: 80px auto 13px;
     font-weight: 400;
-    max-width: 720px;
+    max-width: 700px;
   }
 
   hr {
@@ -119,11 +119,11 @@ class App extends Component {
           ))}
         </div>
         <h1>
-          Coursework
+          Coursework and research
           <hr />
         </h1>
         <div>
-          {data.courses.map(i => (
+          {data.academia.map(i => (
             <Project data={i} />
           ))}
         </div>

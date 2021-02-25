@@ -6,7 +6,7 @@ const HEIGHT = '320px';
 
 const Div = styled.div`
   margin: 0 auto 30px;
-  width: 720px;
+  width: 700px;
   max-width: calc(100% - 30px);
 
   & > a {
@@ -15,13 +15,17 @@ const Div = styled.div`
     text-align: center;
     width: ${WIDTH};
     max-width: calc(100% - 30px);
-    height: ${HEIGHT};
+    nahnahnahheight: ${HEIGHT};
 
     img {
       object-fit: cover;
       /* object-position: left 50%; */
       width: 100%;
       height: 100%;
+    }
+
+    video {
+      width: 500px;
     }
   }
 
@@ -33,23 +37,32 @@ const Div = styled.div`
   div a {
     text-decoration: none;
     color: #121212;
+    line-height: 23px;
   }
 
   div a:first-child {
     font-weight: bold;
     margin-right: 5px;
+    border-bottom: 1px solid #ccc;
   }
 
   div a:last-child {
     margin-left: 5px;
   }
 
-  div,
-  p {
+  div.title a {
+    /* font-size: 21px; */
   }
 
   p {
     margin: 0 auto;
+  }
+
+  p.award {
+    margin-top: 7px;
+    a {
+      color: #121212;
+    }
   }
 `;
 
@@ -62,22 +75,40 @@ const getPublisher = url => {
       'Columbia Daily Spectator',
       'https://www.columbiaspectator.com/contributors/Charlotte-Li/',
     ];
+  else if (url.includes('Advanced Programming'))
+    return [url, 'http://www.cs.columbia.edu/~jae/3157/'];
+  return [url, url];
 };
 
-export const Project = ({ data: { articleUrl, imgPath, title, description } }) => {
+export const Project = ({
+  data: { articleUrl, imgPath, title, description, award },
+}) => {
   const [publisher, publisherUrl] = getPublisher(articleUrl);
   return (
     <Div>
       {imgPath && (
         <a href={articleUrl}>
-          <img src={imgPath.includes('http') ? imgPath : `/images/${imgPath}`} />
+          {imgPath.includes('.mov') ? (
+            <video autoPlay playsInline muted loop>
+              <source src={`/images/${imgPath}`} />
+            </video>
+          ) : (
+            <img
+              src={imgPath.includes('http') ? imgPath : `/images/${imgPath}`}
+            />
+          )}
         </a>
       )}
-      <div>
-        <a href={articleUrl}>{title}</a>|
-        <a href={publisherUrl}>{publisher}</a>
+      <div class="title">
+        <a href={articleUrl}>{title}</a>|<a href={publisherUrl}>{publisher}</a>
       </div>
       <p>{description}</p>
+      {award && (
+        <p
+          class="award"
+          dangerouslySetInnerHTML={{ __html: '🏆 ' + award }}
+        ></p>
+      )}
     </Div>
   );
 };
