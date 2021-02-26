@@ -9,9 +9,11 @@ const Container = styled.div`
   color: #121212;
   font-size: 19px;
   line-height: 22px;
+  max-width: 700px;
+  margin: 0 auto;
 
   > p {
-    max-width: 700px;
+    max-width: calc(100% - 30px);
     margin: 15px auto;
   }
 
@@ -20,7 +22,7 @@ const Container = styled.div`
     padding: 0 5px 6px;
     margin: 80px auto 13px;
     font-weight: 400;
-    max-width: 700px;
+    max-width: calc(100% - 30px);
   }
 
   hr {

@@ -6,7 +6,6 @@ const HEIGHT = '320px';
 
 const Div = styled.div`
   margin: 0 auto 30px;
-  width: 700px;
   max-width: calc(100% - 30px);
 
   & > a {
@@ -26,6 +25,7 @@ const Div = styled.div`
 
     video {
       width: 500px;
+      max-width: calc(100% - 30px);
     }
   }
 
