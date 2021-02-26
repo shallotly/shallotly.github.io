@@ -116,8 +116,8 @@ class App extends Component {
           <hr />
         </h1>
         <div>
-          {data.projects.map(i => (
-            <Project data={i} />
+          {data.projects.map(d => (
+            <Project key={d.url} data={d} />
           ))}
         </div>
         <h1>
@@ -125,15 +125,15 @@ class App extends Component {
           <hr />
         </h1>
         <div>
-          {data.academia.map(i => (
-            <Project data={i} />
+          {data.academia.map(d => (
+            <Project key={d.url} data={d} />
           ))}
         </div>
         <Footer>
           {Object.keys(footerLinks).map(key => (
             <>
               <p key={key}>
-                <a key={key} href={footerLinks[key]}>
+                <a href={footerLinks[key]}>
                   {key}
                 </a>
               </p>

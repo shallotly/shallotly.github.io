@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WIDTH = '440px';
+const WIDTH = '450px';
 const HEIGHT = '320px';
 
 const Div = styled.div`
@@ -13,7 +13,6 @@ const Div = styled.div`
     margin-bottom: 8px;
     text-align: center;
     width: ${WIDTH};
-    max-width: calc(100% - 30px);
     nahnahnahheight: ${HEIGHT};
 
     img {
@@ -24,8 +23,7 @@ const Div = styled.div`
     }
 
     video {
-      width: 500px;
-      max-width: calc(100% - 30px);
+      width: 100%;
     }
   }
 
@@ -99,13 +97,13 @@ export const Project = ({
           )}
         </a>
       )}
-      <div class="title">
+      <div className="title">
         <a href={articleUrl}>{title}</a>|<a href={publisherUrl}>{publisher}</a>
       </div>
       <p>{description}</p>
       {award && (
         <p
-          class="award"
+          className="award"
           dangerouslySetInnerHTML={{ __html: '🏆 ' + award }}
         ></p>
       )}
