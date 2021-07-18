@@ -74,19 +74,40 @@ export default {
       description:
         'In preparation for the November 2019 Democratic Debate, we looked at a large dataset consisting of thousands of individual donations made by staff and faculty members at Columbia University. I cleaned and aggregated the data and built alluvial visualizations and other charts using R and Adobe Illustrator. I used ai2html for web production',
     },
+    {
+      imgPath: 'giving-day.png',
+      title:
+        'When restaurants struggle to survive, what does it mean for the community?',
+      articleUrl:
+        'https://www.columbiaspectator.com/photo-essays/2021/01/21/when-restaurants-struggle-to-survive-what-does-it-mean-for-the-community/',
+      description:
+        'TK',
+    },
   ],
   academia: [
     {
-      title: 'Thesaurus TK',
-      articleUrl: 'TK',
+      title: 'WARN scraper',
+      articleUrl: 'Stanford University',
       description:
         'TK',
     },
     {
-      title: 'Web server in C from scratch',
-      articleUrl: 'Advanced Programming',
+      title: 'Agenda Watch',
+      articleUrl: 'Stanford University',
       description:
-        'I coded a web server that implements a subset of HTTP 1.0. The server returns dynamic content and maintains a persistent TCP connection to a database server. I used socket programming as well.',
+        'TK',
     },
+    {
+      title: 'Style-aware Thesaurus with BERT',
+      articleUrl: 'Columbia University',
+      description:
+        'TK',
+    },
+    // {
+    //   title: 'Web server in C from scratch',
+    //   articleUrl: 'Advanced Programming',
+    //   description:
+    //     'I coded a web server that implements a subset of HTTP 1.0. The server returns dynamic content and maintains a persistent TCP connection to a database server. I used socket programming as well.',
+    // },
   ],
 };

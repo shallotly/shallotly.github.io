@@ -101,31 +101,30 @@ class App extends Component {
           Hi, my name is <b>{ALIAS[this.state.index % ALIAS.length]}</b>.
         </p>
         <p>
-          I am a third-year computer science-math major at Columbia University
-          interested in data visualization and data journalism.
+          I am a student data journalist and a fourth-year computer science-math major at Columbia University.
         </p>
         <p>
-          I also have experience in data analysis, mapping, design, natural
-          language processing, design, and video editing. You can view my art{' '}
+          I am interested in how machine learning advances journalism. I also have experience in data analysis, mapping, design, natural
+          language processing, and video editing. You can view my art{' '}
           <a href="https://charligraphy.wordpress.com">here</a>. My resume is{' '}
           <a href={`/resume.pdf`}>here</a>. You can contact me at{' '}
           <a href="mailto:li.zihao@columbia.edu">li.zihao@columbia.edu</a>.
         </p>
+        <h1>
+          Research
+          <hr />
+        </h1>
+        <div>
+          {data.academia.map(d => (
+            <Project key={d.url} data={d} />
+          ))}
+        </div>
         <h1>
           Projects
           <hr />
         </h1>
         <div>
           {data.projects.map(d => (
-            <Project key={d.url} data={d} />
-          ))}
-        </div>
-        <h1>
-          Coursework and research
-          <hr />
-        </h1>
-        <div>
-          {data.academia.map(d => (
             <Project key={d.url} data={d} />
           ))}
         </div>
