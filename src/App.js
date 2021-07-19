@@ -12,6 +12,10 @@ const Container = styled.div`
   max-width: 700px;
   margin: 0 auto;
 
+  .project {
+    margin-bottom: 50px;
+  }
+
   > p {
     max-width: calc(100% - 30px);
     margin: 15px auto;
@@ -110,7 +114,7 @@ class App extends Component {
           <a href={`/resume.pdf`}>here</a>. You can contact me at{' '}
           <a href="mailto:li.zihao@columbia.edu">li.zihao@columbia.edu</a>.
         </p>
-        <h1>
+        {/* <h1>
           Research
           <hr />
         </h1>
@@ -118,7 +122,7 @@ class App extends Component {
           {data.academia.map(d => (
             <Project key={d.url} data={d} />
           ))}
-        </div>
+        </div> */}
         <h1>
           Projects
           <hr />

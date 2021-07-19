@@ -1,6 +1,45 @@
 export default {
   projects: [
     {
+      title: 'WARN scraper',
+      articleUrl: '',
+      institution: 'Stanford University',
+      description:
+        'This is a project in progress. I am working with Professor Cheryl Phillips and Professor Serdar Tumgoren to construct an open-source streamlined system to scrape company lay-off notices from state government websites.',
+    },
+    {
+      title: 'Agenda Watch',
+      articleUrl: '',
+      institution: 'Stanford University',
+      description:
+        'This is a project in progress. I am exploring an optimized search system using probabilistic topic modeling and Elastic Search for local public hearing minutes and agendas.',
+    },
+    {
+      title: 'Style-aware Thesaurus with BERT',
+      articleUrl: 'https://colab.research.google.com/drive/1cS3pKhxMZVr97t2YbpjXuGxcLpbEWKjR?usp=sharing',
+      institution: 'Columbia University',
+      description:
+        'This project is an extension of <a href="https://www.katygero.com/papers/2019_StylisticThesaurus.pdf">Katy Gero’ paper on constructing a style-aware thesaurus using word embeddings</a>. I explored whether using the state of art BERT language model could improve the performance of the thesaurus. I fine-tuned a BERT model with an arXiv Computer Science paper corpus, and I compared its performance on a generic lexical substitution task and a test set from the original corpus against a pretrained BERT model. A report for the project is being edited by Katy Gero.',
+    },
+    {
+      imgPath: 'restaurant.gif',
+      title:
+        'The Changing Food Landscape: How The Columbia area shifted from mom-and-pop restaurants to a hotspot for chains and trendy eats',
+      articleUrl:
+        'https://www.columbiaspectator.com/arts-and-entertainment/2021/06/17/the-changing-food-landscape-how-the-columbia-area-shifted-from-mom-and-pop-restaurants-to-a-hotspot-for-chains-and-trendy-eats/?fbclid=IwAR1FjtViq0b2Cpq5JEOnOozrUMJX6eAe2VaE93Q8NPfqEmPcWVsTyWogBOQ',
+      description:
+        'Guided data reporting and analysis on storefront occupancy and business type in the Mo-Hi neighborhood, and mentored data visualization in D3 with data collected by Noah Sheidlower.',
+    },
+    {
+      imgPath: 'table.png',
+      title:
+        'When restaurants struggle to survive, what does it mean for the community?',
+      articleUrl:
+        'https://www.columbiaspectator.com/photo-essays/2021/01/21/when-restaurants-struggle-to-survive-what-does-it-mean-for-the-community/',
+      description:
+        'Edited and styled an interactive table by Elizabeth Commisso using data collected by Noah Sheidlower.',
+    },
+    {
       imgPath: 'international.mov',
       title:
         'International student enrollment is in jeopardy. These are the states that would be affected the most.',
@@ -74,35 +113,9 @@ export default {
       description:
         'In preparation for the November 2019 Democratic Debate, we looked at a large dataset consisting of thousands of individual donations made by staff and faculty members at Columbia University. I cleaned and aggregated the data and built alluvial visualizations and other charts using R and Adobe Illustrator. I used ai2html for web production',
     },
-    {
-      imgPath: 'giving-day.png',
-      title:
-        'When restaurants struggle to survive, what does it mean for the community?',
-      articleUrl:
-        'https://www.columbiaspectator.com/photo-essays/2021/01/21/when-restaurants-struggle-to-survive-what-does-it-mean-for-the-community/',
-      description:
-        'TK',
-    },
   ],
   academia: [
-    {
-      title: 'WARN scraper',
-      articleUrl: 'Stanford University',
-      description:
-        'TK',
-    },
-    {
-      title: 'Agenda Watch',
-      articleUrl: 'Stanford University',
-      description:
-        'TK',
-    },
-    {
-      title: 'Style-aware Thesaurus with BERT',
-      articleUrl: 'Columbia University',
-      description:
-        'TK',
-    },
+    
     // {
     //   title: 'Web server in C from scratch',
     //   articleUrl: 'Advanced Programming',

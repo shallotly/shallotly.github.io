@@ -65,7 +65,7 @@ const Div = styled.div`
 `;
 
 /* This function returns the publisher & URL for the URL of a certain article */
-const getPublisher = url => {
+const getPublisher = (url,ins) => {
   if (url.includes('nbcnews.com'))
     return ['NBC News', 'https://www.nbcnews.com/pages/author/charlotte-li'];
   else if (url.includes('columbiaspectator.com'))
@@ -73,17 +73,17 @@ const getPublisher = url => {
       'Columbia Daily Spectator',
       'https://www.columbiaspectator.com/contributors/Charlotte-Li/',
     ];
-  else if (url.includes('Advanced Programming'))
-    return [url, 'http://www.cs.columbia.edu/~jae/3157/'];
+  else 
+    return [ins,url];
   return [url, url];
 };
 
 export const Project = ({
-  data: { articleUrl, imgPath, title, description, award },
+  data: { articleUrl, imgPath, title, description, award, institution },
 }) => {
-  const [publisher, publisherUrl] = getPublisher(articleUrl);
+  const [publisher, publisherUrl] = getPublisher(articleUrl,institution);
   return (
-    <Div>
+    <Div className='project'>
       {imgPath && (
         <a href={articleUrl}>
           {imgPath.includes('.mov') ? (
@@ -100,7 +100,7 @@ export const Project = ({
       <div className="title">
         <a href={articleUrl}>{title}</a>|<a href={publisherUrl}>{publisher}</a>
       </div>
-      <p>{description}</p>
+      <p dangerouslySetInnerHTML={{__html:description}}></p>
       {award && (
         <p
           className="award"
