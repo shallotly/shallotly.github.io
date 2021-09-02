@@ -1,6 +1,13 @@
 export default {
   projects: [
     {
+      title: 'Agenda Watch:local public meeting minutes search pipeline',
+      articleUrl: 'https://colab.research.google.com/drive/1gaHlUPeTaMMVq3B9EeeuaUxPuRx_Lk3m#scrollTo=sAoTbSlPBClo',
+      institution: 'Stanford University',
+      description:
+        'This is a project in progress. I am exploring an optimized search system using probabilistic topic modeling and Elastic Search for local public hearing minutes and agendas.',
+    },
+    {
       title: 'WARN scraper',
       articleUrl: '',
       institution: 'Stanford University',
@@ -8,18 +15,20 @@ export default {
         'This is a project in progress. I am working with Professor Cheryl Phillips and Professor Serdar Tumgoren to construct an open-source streamlined system to scrape company lay-off notices from state government websites.',
     },
     {
-      title: 'Agenda Watch',
-      articleUrl: '',
-      institution: 'Stanford University',
-      description:
-        'This is a project in progress. I am exploring an optimized search system using probabilistic topic modeling and Elastic Search for local public hearing minutes and agendas.',
-    },
-    {
       title: 'Style-aware Thesaurus with BERT',
       articleUrl: 'https://colab.research.google.com/drive/1cS3pKhxMZVr97t2YbpjXuGxcLpbEWKjR?usp=sharing',
       institution: 'Columbia University',
       description:
         'This project is an extension of <a href="https://www.katygero.com/papers/2019_StylisticThesaurus.pdf">Katy Gero’ paper on constructing a style-aware thesaurus using word embeddings</a>. I explored whether using the state of art BERT language model could improve the performance of the thesaurus. I fine-tuned a BERT model with an arXiv Computer Science paper corpus, and I compared its performance on a generic lexical substitution task and a test set from the original corpus against a pretrained BERT model. A report for the project is being edited by Katy Gero.',
+    },
+    {
+      imgPath: 'restaurant.gif',
+      title:
+        'Decolonizing CC: The Canon From a Computational Perspective',
+      articleUrl:
+        'https://shallotly.github.io/decolonize_CC/',
+      description:
+        'Final project for both Contemporary Civilization class and Introduction to Data Visualization class. In this project, I explored the repeated referencing of each other among the authors in the "Canon" as well as how this co-reference impact the way authors talk about specific topics. I used a word tree visualization and a chord diagram to explore the connections between the authors. The word tree was made using D3.js with help from Jason Davies.',
     },
     {
       imgPath: 'restaurant.gif',
