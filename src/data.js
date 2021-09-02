@@ -22,7 +22,7 @@ export default {
         'This project is an extension of <a href="https://www.katygero.com/papers/2019_StylisticThesaurus.pdf">Katy Gero’ paper on constructing a style-aware thesaurus using word embeddings</a>. I explored whether using the state of art BERT language model could improve the performance of the thesaurus. I fine-tuned a BERT model with an arXiv Computer Science paper corpus, and I compared its performance on a generic lexical substitution task and a test set from the original corpus against a pretrained BERT model. A report for the project is being edited by Katy Gero.',
     },
     {
-      imgPath: 'restaurant.gif',
+      imgPath: 'author.gif',
       title:
         'Decolonizing CC: The Canon From a Computational Perspective',
       articleUrl:
