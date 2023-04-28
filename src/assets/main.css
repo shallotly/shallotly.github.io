@@ -9,11 +9,22 @@
   }
   margin: 0 auto;
   /* padding: 2rem; */
+
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a:any-link {
+  color: #001440;
+  text-decoration: none;
+  cursor:pointer;
 }
+
+a:hover {
+  text-decoration: underline #008cdd;
+}
+
+/* @media (hover: hover) {
+   a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  } 
+} */
 

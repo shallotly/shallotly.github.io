@@ -49,6 +49,9 @@ header {
 .socials a {
   margin: 5px 5px;
 }
+.socials a:hover {
+  border-bottom: #008cdd solid;
+}
 .intro {
   display: inline-block;
   width: 75%;
@@ -61,8 +64,6 @@ header {
   font-size: 17px;
   line-height: 21px;
 }
-.intro a {
-  color: #001440;
-}
+
 
 </style>
