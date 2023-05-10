@@ -20,22 +20,22 @@
         {
           "platform": "twitter",
           "link": "https://twitter.com/shallotly",
-          "icon": "/twitter.svg"
+          "icon": "/social-icon/twitter.svg"
         },
         {
           "platform": "linkedIn",
           "link": "https://www.linkedin.com/in/charlotte-li-b4394b163",
-          "icon": "/linkedin.svg"
+          "icon": "/social-icon/linkedin.svg"
         },
         {
           "platform": "gmail",
           "link": "mailto:li.zihao@columbia.edu",
-          "icon": "/envelope.svg"
+          "icon": "/social-icon/envelope.svg"
         },
         {
           "platform": "github",
           "link": "https://github.com/shallotly",
-          "icon": "/github.svg"
+          "icon": "/social-icon/github.svg"
         }
       ]
     },

@@ -41,7 +41,7 @@ function tabClick(event){
     <div class="tabs">
       <div v-for="(_,tab) in tabs" :key="tab" :class="['tab', { selected: currentTab === tab }]" @click="currentTab = tab">{{ tab }}</div>
     </div>
-    <component :is="tabs[currentTab]"></component>
+    <component :is="tabs[currentTab]" :data="text[currentTab.toLowerCase()].titles"></component>
   </body>
   <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
