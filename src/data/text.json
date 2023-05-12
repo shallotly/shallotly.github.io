@@ -1,0 +1,187 @@
+{
+    "header": {
+      "intro": {
+        "text": [
+          {
+            "type": "text",
+            "value": "I am a PhD student in Northwestern University's Technology and Social Behavior program, and my research interests include <b>human computer interaction</b>, <b>journalism</b>, and <b>language</b>. With my research, I aim to improve how people <b>derive insights</b> from complex, raw data and to <b>make mass communication of information</b> more accessible and equitable."
+          },
+          {
+            "type": "text",
+            "value": "Before starting my PhD at NU, I worked as a visual and data journalist at National Geographic and NBC News. I finished my bachelor’s degree in computer science and math at Columbia University in 2022."
+          },
+          {
+            "type": "text",
+            "value": "I have experience in data analysis, digital storytelling, data visualization and natural language processing. You can view my art <a class=\"intro-link\" href=\"https://charligraphy.wordpress.com/\">here</a>. My resume is <a class=\"intro-link\" href=\"/envelope.svg\">here</a>. You can contact me at <a class=\"intro-link\" href=\"mailto:li.zihao@columbia.edu\">li.zihao@columbia.edu</a>."
+          }
+        ]
+      },
+      "socials": [
+        {
+          "platform": "twitter",
+          "link": "https://twitter.com/shallotly",
+          "icon": "/social-icon/twitter.svg"
+        },
+        {
+          "platform": "linkedIn",
+          "link": "https://www.linkedin.com/in/charlotte-li-b4394b163",
+          "icon": "/social-icon/linkedin.svg"
+        },
+        {
+          "platform": "gmail",
+          "link": "mailto:li.zihao@columbia.edu",
+          "icon": "/social-icon/envelope.svg"
+        },
+        {
+          "platform": "github",
+          "link": "https://github.com/shallotly",
+          "icon": "/social-icon/github.svg"
+        }
+      ]
+    },
+    "journalism": {
+      "titles": [
+        {
+          "org": "ngm",
+          "name": "5 surprising ways elephants have evolved",
+          "url": "https://www.nationalgeographic.com/premium/graphics/african-asian-elephants-species-adaptations-feature",
+          "description": "A scroll-triggered animation revealing secrets of elephants.",
+          "tools": "Illustrator, After Effects, GSAP, ffmpeg",
+          "image": "elephant.jpg"
+        },
+        {
+          "org": "ngm",
+          "name": "The Earth’s population is booming",
+          "url": "https://www.nationalgeographic.com/magazine/graphics/global-population-8-billion-demographic-dividend-data-feature",
+          "description": "An interactive breakdown of a population dividend chart to guide you through the demographers predictions of world population.",
+          "tools": "D3.js, GSAP",
+          "image": "8billion.png"
+        },
+        {
+          "org": "ngm",
+          "name": "Explore how traditional mud homes keep you cool",
+          "url": "https://www.nationalgeographic.com/magazine/graphics/burkina-faso-mud-house-architecture-3d-model-feature",
+          "description": "A scroll-triggered animated introduction to Burkina Faso’s traditional mud houses and their advantages in the world of changing climate.",
+          "tools": "Blender, GSAP, ffmpeg",
+          "image": "mena.jpg"
+        },
+        {
+          "org": "cds",
+          "name": "Decolonizing CC: The Canon From a Computational Perspective",
+          "url": "https://shallotly.github.io/decolonize_CC/",
+          "description": "A visual exploration, with a word tree visualization and a chord diagram, of the practices of referencing among the authors of Columbia University’s Contemporary Civilization curriculum.",
+          "tools": "D3.js",
+          "image": "author.gif"
+        },
+        {
+          "org": "cds",
+          "name": "The Changing Food Landscape",
+          "url": "https://www.columbiaspectator.com/arts-and-entertainment/2021/06/17/the-changing-food-landscape-how-the-columbia-area-shifted-from-mom-and-pop-restaurants-to-a-hotspot-for-chains-and-trendy-eats/",
+          "description": "A heatmap exploring increasing chain restaurant presence in the Morningside Heights neighborhood.",
+          "tools": "D3.js",
+          "image": "restaurant.gif"
+        },
+        {
+          "org": "cds",
+          "name": "When restaurants struggle to survive, what does it mean for the community?",
+          "url": "https://www.columbiaspectator.com/photo-essays/2021/01/21/when-restaurants-struggle-to-survive-what-does-it-mean-for-the-community/",
+          "description": "An interactive inline table of a comprehensive list of dining businesses in the Morningside Heights neighborhood.",
+          "tools": "",
+          "image": "table.png"
+        },
+        {
+          "org": "cds",
+          "name": "For Athletes, Career Networks Unlock a World of Opportunity in Finance and Consulting",
+          "url": "https://www.columbiaspectator.com/the-eye/2020/11/14/for-athletes-career-networks-unlock-a-world-of-opportunity-in-finance-and-consulting/",
+          "description": "A Sankey diagram explaining the post-grad outcomes of athletes at Columbia University.",
+          "tools": "D3.js, scrollama",
+          "image": "athletes.mov"
+        },
+        {
+          "org": "nbc",
+          "name": "International student enrollment is in jeopardy.",
+          "url": "https://www.nbcnews.com/news/us-news/map-trump-international-student-rule-effects-state-n1233219",
+          "description": "Static data visualization explaining the impact of changing immigration policies on state finances.",
+          "tools": "D3.js, Illustrator",
+          "image": "international.mov"
+        },
+        {
+          "org": "nbc",
+          "name": "More than 600,000 businesses got $150,000-plus PPP loans.",
+          "url": "https://www.nbcnews.com/news/us-news/ppp-loan-map-2020-n1233849",
+          "description": "A take on PPP loan data accompanied by an interactive map tool to sift through granular PPP loan public data.",
+          "tools": "Python, mapbox, D3.js",
+          "image": "ppp.png"
+        },
+        {
+          "org": "nbc",
+          "name": "As the 2020 election heats up, find out how your fellow Americans feel about democracy.",
+          "url": "https://www.nbcnews.com/think/opinion/2020-election-heats-find-out-how-your-fellow-americans-feel-ncna1234649",
+          "description": "An interactive form with data visualizations for exploring political polls.",
+          "tools": "D3.js",
+          "image": "survey.mov"
+        },
+        {
+          "org": "cds",
+          "name": "Uncertainty Looms as Student Jobs are Disappearing During the Great Lockdown",
+          "url": "https://www.columbiaspectator.com/eye-lead/2020/05/15/uncertainty-looms-as-student-jobs-are-disappearing-during-the-great-lockdown/",
+          "description": "Scroll-triggered interactive data visualizations that examine the impact of COVID-19 on student internship opportunities.",
+          "tools": "D3.js, scrollama",
+          "image": "job.gif"
+        },
+        {
+          "org": "cds",
+          "name": "Who are Columbia affiliates backing in 2020?",
+          "url": "https://www.columbiaspectator.com/news/2019/11/23/who-are-columbia-affiliates-backing-in-2020-campaign-donation-data-shows-booker-in-the-lead-2/",
+          "description": "A data visualization showing faculty donations to political candidates in 2019.",
+          "tools": "Illustrator, R",
+          "image": "campaign-finance.png"
+        },
+        {
+          "org": "cds",
+          "name": "Community members see long-awaited safety improvements to Morningside Park in aftermath of Majors’ death",
+          "url": "https://www.columbiaspectator.com/news/2020/01/30/community-members-see-long-awaited-safety-improvements-to-morningside-park-in-aftermath-of-majors-death/",
+          "description": "A map visualization exploring 311 safety complaints in Morningside Park.",
+          "tools": "mapshaper, R, QGIS, Illustrator",
+          "image": "311.png"
+        },
+        {
+          "org": "cds",
+          "name": "‘The next chapter’: Despite history of alumni apathy, Bollinger-era initiatives drive newfound culture of engagement",
+          "url": "https://www.columbiaspectator.com/news/2019/10/31/the-next-chapter-despite-history-of-alumni-apathy-bollinger-era-initiatives-drive-newfound-culture-of-engagement/",
+          "description": "A small multiple step chart visualizing alumni donations overtime in each Columbia school.",
+          "tools": "R, Illustrator",
+          "image": "giving-day.png"
+        }
+      ]
+    },
+    "research": {
+      "titles": [
+        {
+          "org": "",
+          "name": "A Design Space for Writing Support Tools Using a Cognitive Process Model of Writing",
+          "url": "https://aclanthology.org/2022.in2writing-1.2/",
+          "abstract": ""
+        },
+        {
+          "org": "",
+          "name": "Comparing the Memorability of 2D & 3D Data Visualizations",
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "org": "",
+          "name": "Characterizing the Usage of Local Government Documents by Journalists",
+          "url": "",
+          "abstract": ""
+        },
+        {
+          "org": "",
+          "name": "Agenda Watch:local public meeting minutes search pipeline",
+          "url": "https://colab.research.google.com/drive/1gaHlUPeTaMMVq3B9EeeuaUxPuRx_Lk3m#scrollTo=sAoTbSlPBClo",
+          "abstract": ""
+        }
+      ]
+    },
+    "resume":{}
+  }

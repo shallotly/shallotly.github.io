@@ -1,0 +1,30 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#app {
+  color:#001440;
+  max-width: 900px;
+  @media only screen and (max-width: 800px) {
+    max-width: 95%;
+  }
+  margin: 0 auto;
+  /* padding: 2rem; */
+
+}
+
+a:any-link {
+  color: #001440;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+a:hover {
+  text-decoration: underline #008cdd;
+}
+
+/* @media (hover: hover) {
+   a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  } 
+} */
+
