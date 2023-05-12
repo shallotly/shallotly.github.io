@@ -127,7 +127,7 @@
           "url": "https://www.columbiaspectator.com/eye-lead/2020/05/15/uncertainty-looms-as-student-jobs-are-disappearing-during-the-great-lockdown/",
           "description": "Scroll-triggered interactive data visualizations that examine the impact of COVID-19 on student internship opportunities.",
           "tools": "D3.js, scrollama",
-          "image": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MJQEFP4WVNASVES4BCIJCHKZKM.gif"
+          "image": "job.gif"
         },
         {
           "org": "cds",
