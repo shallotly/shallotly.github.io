@@ -43,6 +43,11 @@ function tabClick(event){
     </div>
     <component :is="tabs[currentTab]" :data="text[currentTab.toLowerCase()].titles"></component>
   </body>
+  <footer>
+    <p><a href="mailto:li.zihao@columbia.edu"><span>Send me</span></a> something you think I would enjoy reading!</p>
+    <div>COPYRIGHT © 2023 Charlotte Li</div>
+    <div></div>
+  </footer>
   <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -124,6 +129,24 @@ header {
 .tab.selected{
   color:#001440;
   background-color: #FCF6E8;
+}
+
+footer > * {
+ text-align: center;
+}
+
+footer p {
+  margin: 20vh 0 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 17px;
+}
+
+footer div {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 17px;
+  color: #B5B5B5;
 }
 
 </style>

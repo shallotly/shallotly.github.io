@@ -7,15 +7,14 @@ const props = defineProps({
   }
 })
 
-const imgPath = ref(props.data[0].image)
+const currentIndex = ref(0)
 
-console.log(imgPath.value)
 </script>
 
 <template>
   <div class="journalism-section">
     <div class="title-list">
-      <div v-for="(title,i) in data" :key="i" :class="['title','title-'+i]">
+      <div v-for="(title,i) in data" :key="i" :class="[ {selected: i==currentIndex},'title','title-'+i]" @click="currentIndex=i">
         <div class="icon">
         <img v-if="title.org == 'ngm'" :src="`/org-icon/${title.org}.svg`">
         <img v-else :src="`/org-icon/${title.org}.png`">
@@ -24,10 +23,10 @@ console.log(imgPath.value)
       </div>
     </div>
     <div class="detail">
-      <div :style="{ backgroundImage: 'url('+imgPath+')', height: 500 +'px'}" class="poster"></div>
-      <h1>{{ data[0].name }}</h1>
-      <p class="description">{{ data[0].description }}</p>
-      <p class="tools"><span>TOOLS: </span>{{ data[0].tools }}</p>
+      <a :href="data[currentIndex].url"><div :style="{ backgroundImage: 'url(/poster/'+data[currentIndex].image+')'}" class="poster"></div></a>
+      <a :href="data[currentIndex].url"><h1>{{ data[currentIndex].name }}<img class="link-icon" src="/link.svg"></h1></a>
+      <p class="description">{{ data[currentIndex].description }}</p>
+      <p class="tools"><span>TOOLS</span><br>{{ data[currentIndex].tools }}</p>
     </div>
   </div>
 </template>
@@ -35,21 +34,50 @@ console.log(imgPath.value)
 <style scoped>
 .journalism-section {
   display: flex;
+  margin: 40px 10px;
   justify-content: space-between;
 }
 .title-list {
   display: inline-block;
   width: 45%;
+  margin-right: 20px;
 }
 .detail{
   display:inline-block;
+  width: 55%;
+  margin: 0 10px;
+  position: sticky;
+  align-self: flex-start;
+  top: 10px;
+  border: grey 1px solid;
+}
+.title {
+  border-bottom: 1px solid #B5B5B5;
+  margin-bottom: 0.5em;
 }
 .title p {
   display: inline-block;
-  width: 90%;
+  width: 88%;
+  margin-block-start:0;
+  margin-block-end: 0;
+  margin-bottom: 0.5em;
+  padding: 2px 0;
+
+  font-family: 'Roboto Slab';
+  font-weight: 300;
+  font-size: 17px;
+  vertical-align: middle;
+  line-height: 1.25em;
+
+  cursor: pointer;
+}
+.title.selected p{
+  font-weight: 700;
 }
 .icon {
   display: inline-block;
+  vertical-align: top;
+  margin: 3px 7px;
 }
 .icon img{
   width: 20px;
@@ -57,5 +85,40 @@ console.log(imgPath.value)
 
 .poster{
   background-size: cover;
+  aspect-ratio: 1;
+  width: 100%;
+}
+
+.detail h1 {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-block-start: 1em;
+}
+.link-icon {
+  margin-left: 7px;
+  height: 1em;
+}
+
+.description {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+.tools {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.tools span {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
 }
 </style>
