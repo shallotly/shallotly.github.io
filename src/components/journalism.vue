@@ -30,8 +30,6 @@ const currentIndex = ref(0);
       <a :href="data[currentIndex].url">
         <video v-if="data[currentIndex].image.includes('mov')" :src="`/poster/${data[currentIndex].image}`" class="poster" autoplay loop muted></video>
         <img v-else :src="`/poster/${data[currentIndex].image}`" class="poster">
-      <!-- <embed :src="`/poster/${data[currentIndex].image}`" class="poster"> -->
-         <!-- <noembed><img src = "yourimage.gif" alt = "Alternative Media" ></noembed> -->
     </a>
       <a :href="data[currentIndex].url"
         ><h1>
@@ -55,7 +53,8 @@ const currentIndex = ref(0);
 .title-list {
   display: inline-block;
   width: 45%;
-  margin-right: 20px;
+  border-right: rgba(0, 140, 221, 1) 1px solid;
+  padding-right: 15px;
 }
 .detail {
   display: inline-block;
@@ -64,10 +63,9 @@ const currentIndex = ref(0);
   position: sticky;
   align-self: flex-start;
   top: 10px;
-  border: grey 1px solid;
 }
 .title {
-  border-bottom: 1px solid #b5b5b5;
+  border-bottom: 1px solid rgba(0, 140, 221, 0.1);
   margin-bottom: 0.5em;
 }
 .title p {
@@ -85,6 +83,11 @@ const currentIndex = ref(0);
   line-height: 1.25em;
 
   cursor: pointer;
+}
+.title.selected {
+  border-bottom-color:  rgba(0, 140, 221, 1);
+  padding-right: 15px;
+  margin-right: -15px;
 }
 .title.selected p {
   font-weight: 700;
