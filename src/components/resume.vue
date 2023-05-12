@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div>Resume Section</div>
+  <div>This page is still under construction :).</div>
 </template>
 
 <style scoped>
