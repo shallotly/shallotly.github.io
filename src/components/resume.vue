@@ -14,4 +14,8 @@ defineProps({
 </template>
 
 <style scoped>
+  iframe {
+    margin: 50px auto;
+    width: 100%;
+  }
 </style>
