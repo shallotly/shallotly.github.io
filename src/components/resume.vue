@@ -14,8 +14,17 @@ defineProps({
 </template>
 
 <style scoped>
+  .resume-container {
+    position: relative;
+    width: 95%;
+    aspect-ratio: 1/1.2;
+    margin: 20px auto;
+  }
+  
   iframe {
-    margin: 50px auto;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
   }
 </style>
