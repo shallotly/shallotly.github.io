@@ -158,28 +158,11 @@
     "research": {
       "titles": [
         {
-          "org": "",
-          "name": "A Design Space for Writing Support Tools Using a Cognitive Process Model of Writing",
-          "url": "https://aclanthology.org/2022.in2writing-1.2/",
-          "abstract": ""
-        },
-        {
-          "org": "",
-          "name": "Comparing the Memorability of 2D & 3D Data Visualizations",
-          "url": "",
-          "abstract": ""
-        },
-        {
-          "org": "",
-          "name": "Characterizing the Usage of Local Government Documents by Journalists",
-          "url": "",
-          "abstract": ""
-        },
-        {
-          "org": "",
-          "name": "Agenda Watch:local public meeting minutes search pipeline",
-          "url": "https://colab.research.google.com/drive/1gaHlUPeTaMMVq3B9EeeuaUxPuRx_Lk3m#scrollTo=sAoTbSlPBClo",
-          "abstract": ""
+          "title": "A Design Space for Writing Support Tools Using a Cognitive Process Model of Writing",
+          "authors": ["Katy Gero", "Alex Calderwood", "Charlotte Li", "Lydia Chilton"],
+          "conference": "In2Writing Workshop at ACL 2022",
+          "pdf":"https://www.katygero.com/papers/2022_DesignSpaceForWritingSupport.pdf",
+          "award":""
         }
       ]
     },

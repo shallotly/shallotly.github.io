@@ -7,12 +7,12 @@ import {ref} from "vue";
 import text from "./data/text.json";
 
 const tabs = {
-  Journalism,
   Research,
+  Journalism,
   Resume
 }
 
-const currentTab = ref("Journalism")
+const currentTab = ref("Research")
 
 function tabClick(event){
   //remove selected from all
