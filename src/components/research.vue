@@ -51,8 +51,8 @@ h3 {
   margin-bottom: 1px;
   font-family: "Roboto Slab";
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5rem;
+  font-size: 15.5px;
+  line-height: 1.25rem;
 }
 
 .pdf {
