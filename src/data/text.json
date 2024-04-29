@@ -165,6 +165,13 @@
           "award":""
         },
         {
+          "title": "Domain-Specific Evaluation Strategies for AI in Journalism",
+          "authors": ["Sachita Nishal*", "Charlotte Li*","Nicholas Diakopoulos"],
+          "conference": "Workshop on Evaluating Interactive AI at CHI 2024",
+          "pdf":"https://arxiv.org/abs/2403.17911",
+          "award":""
+        },
+        {
           "title": "A Design Space for Writing Support Tools Using a Cognitive Process Model of Writing",
           "authors": ["Katy Gero", "Alex Calderwood", "Charlotte Li", "Lydia Chilton"],
           "conference": "In2Writing Workshop at ACL 2022",
