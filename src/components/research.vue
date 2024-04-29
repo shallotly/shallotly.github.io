@@ -59,4 +59,8 @@ h3 {
 .pdf {
   font-weight: 300;
 }
+
+.note {
+  margin-top: 50px;
+}
 </style>
