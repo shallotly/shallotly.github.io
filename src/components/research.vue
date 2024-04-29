@@ -61,6 +61,6 @@ h3 {
 }
 
 .note {
-  margin-top: 50px;
+  margin-top: 15.5px;
 }
 </style>
