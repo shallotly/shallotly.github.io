@@ -22,7 +22,7 @@ const props = defineProps({
     </h3>
     <p>
       <template v-for="(author,i) in title.authors" :key="i">
-        <span v-if="author == 'Charlotte Li'" ><b>{{ author }}</b>, </span>
+        <span v-if="author.includes('Charlotte Li')" ><b>{{ author }}</b>, </span>
         <span v-else-if="i == title.authors.length-1" >and {{ author }}</span>
         <span v-else >{{ author }}, </span>
       </template>
