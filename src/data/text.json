@@ -158,6 +158,13 @@
     "research": {
       "titles": [
         {
+          "title": "Generative AI in Journalism: The Evolution of Newswork and Ethics in a Generative Information Ecosystem",
+          "authors": ["Nicholas Diakopoulos", "Hannes Cooles", "Charlotte Li", "Natali Helberger", "Ernest Kung", "Aimee Rinehart"],
+          "conference": "Associated Press Report. 2024.",
+          "pdf":"https://drive.google.com/file/d/1rXruz2wQLAXmUtzm1B7lJCpxdWbOHijS/view",
+          "award":""
+        },
+        {
           "title": "A Design Space for Writing Support Tools Using a Cognitive Process Model of Writing",
           "authors": ["Katy Gero", "Alex Calderwood", "Charlotte Li", "Lydia Chilton"],
           "conference": "In2Writing Workshop at ACL 2022",
