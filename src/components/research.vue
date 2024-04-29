@@ -34,7 +34,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
-h1{
+h1 {
   margin:25px 0px 10px;
   font-family: "Roboto Slab";
   font-weight: 700;
@@ -47,7 +47,7 @@ p {
   line-height: 1.25rem;
 }
 
-h3{
+h3 {
   margin-bottom: 1px;
   font-family: "Roboto Slab";
   font-weight: 700;
@@ -55,8 +55,7 @@ h3{
   line-height: 1.5rem;
 }
 
-.pdf{
-  font-size: 14px;
+.pdf {
   font-weight: 300;
 }
 </style>
