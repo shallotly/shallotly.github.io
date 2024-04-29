@@ -29,6 +29,7 @@ const props = defineProps({
     </p>
     <p>{{ title.conference }}.</p>
     </div>
+    <div><p class="note">*authors contributed equally to this research</p></div>
   </div>
   
 </template>
