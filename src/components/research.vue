@@ -51,7 +51,7 @@ h3 {
   margin-bottom: 1px;
   font-family: "Roboto Slab";
   font-weight: 700;
-  font-size: 16.5px;
+  font-size: 16px;
   line-height: 1.5rem;
 }
 
