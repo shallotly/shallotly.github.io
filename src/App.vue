@@ -44,7 +44,7 @@ function tabClick(event){
     <component :is="tabs[currentTab]" :data="text[currentTab.toLowerCase()].titles"></component>
   </body>
   <footer>
-    <p><a href="mailto:charlotte.li@u.northwestern.edu"><span>Send me</span></a> something you think I would enjoy reading!</p>
+    <p><a :href="text.header.socials[2].link"><span>Send me</span></a> something you think I would enjoy reading!</p>
     <div>COPYRIGHT © 2023 Charlotte Li</div>
     <div></div>
   </footer>
