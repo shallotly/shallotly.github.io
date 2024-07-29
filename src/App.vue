@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import Journalism from "./components/journalism.vue";
+import Graphics from "./components/journalism.vue";
 import Research from "./components/research.vue";
 import Resume from "./components/resume.vue";
 import {ref} from "vue";
@@ -8,7 +8,7 @@ import text from "./data/text.json";
 
 const tabs = {
   Research,
-  Journalism,
+  Graphics,
   Resume
 }
 
