@@ -158,23 +158,37 @@
     "research": {
       "titles": [
         {
+          "title": "Understanding Journalistic Practices Surrounding AI: Towards the Design of Support Resources for Journalists to Foster Public AI Literacy",
+          "authors": ["Charlotte Li", "Duri Long"],
+          "conference": "In Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’25)",
+          "pdf":"",
+          "award":""
+        },
+          {
+          "title": "Probing GPT-4 for Knowledge of Journalistic Tasks",
+          "authors": ["Charlotte Li", "Nicholas Diakopoulos"],
+          "conference": "Presented at Computation + Journalism Symposium 2024",
+          "pdf":"https://cplusj2024.github.io/papers/CJ_2024_paper_17.pdf",
+          "award":""
+        },
+          {
           "title": "Generative AI in Journalism: The Evolution of Newswork and Ethics in a Generative Information Ecosystem",
           "authors": ["Nicholas Diakopoulos", "Hannes Cooles", "Charlotte Li", "Natali Helberger", "Ernest Kung", "Aimee Rinehart"],
-          "conference": "Associated Press Report. 2024",
+          "conference": "Associated Press Report 2024",
           "pdf":"https://drive.google.com/file/d/1rXruz2wQLAXmUtzm1B7lJCpxdWbOHijS/view",
           "award":""
         },
         {
           "title": "Domain-Specific Evaluation Strategies for AI in Journalism",
           "authors": ["Sachita Nishal*", "Charlotte Li*","Nicholas Diakopoulos"],
-          "conference": "Workshop on Evaluating Interactive AI at CHI 2024",
+          "conference": "In Workshop on Evaluating Interactive AI at the CHI Conference on Human Factors in Computing Systems (CHI EA ’24)",
           "pdf":"https://arxiv.org/abs/2403.17911",
           "award":""
         },
         {
           "title": "A Design Space for Writing Support Tools Using a Cognitive Process Model of Writing",
           "authors": ["Katy Gero", "Alex Calderwood", "Charlotte Li", "Lydia Chilton"],
-          "conference": "In2Writing Workshop at ACL 2022",
+          "conference": "In In2Writing Workshop at ACL 2022",
           "pdf":"https://www.katygero.com/papers/2022_DesignSpaceForWritingSupport.pdf",
           "award":""
         }
