@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class='resume-container'>
-    <iframe src="https://drive.google.com/file/d/1c8C4X2xNDaP1a0jE1YCfCIq2cylkowzz/view" width="640" height="480" allow="autoplay"></iframe>
+    <iframe src="https://drive.google.com/file/d/1c8C4X2xNDaP1a0jE1YCfCIq2cylkowzz/preview" width="640" height="480" allow="autoplay"></iframe>
   </div>
 </template>
 
